@@ -5,7 +5,7 @@ interface Rumus {
 }
 
 public class LingkaranLambda {
-    private double radius;
+    private final double radius;
 
     public LingkaranLambda(double radius) {
         this.radius = radius;

@@ -9,10 +9,10 @@ public class Lambda2 {
 
     public static void main(String[] args) {
         Berkebalikan rev = (str) -> {
-            String hasil = "";
+            StringBuilder hasil = new StringBuilder();
             for (int i = str.length()-1; i >= 0; i--)
-                hasil += str.charAt(i);
-            return hasil;
+                hasil.append(str.charAt(i));
+            return hasil.toString();
         };
 
         Scanner masuk = new Scanner(System.in);

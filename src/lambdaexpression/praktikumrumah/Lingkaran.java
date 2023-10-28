@@ -1,7 +1,7 @@
 package lambdaexpression.praktikumrumah;
 
 public class Lingkaran implements Bentuk{
-    private double radius;
+    private final double radius;
 
     public Lingkaran(double radius) {
         this.radius = radius;
