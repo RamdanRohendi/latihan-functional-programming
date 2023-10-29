@@ -1,9 +1,5 @@
 package lambdaexpression.praktikumrumah;
 
-interface Rumus {
-    double getNilai(double r);
-}
-
 public class LingkaranLambda {
     private final double radius;
 
@@ -13,6 +9,10 @@ public class LingkaranLambda {
 
     public double getRadius() {
         return radius;
+    }
+
+    interface Rumus {
+        double getNilai(double r);
     }
 
     public static void main(String[] args) {
