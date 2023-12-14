@@ -26,5 +26,20 @@ public class ContohDictionary {
         }
 
         System.out.println("\nSize of Dictionary: " + myDict.size());
+
+        System.out.println();
+        myDict.put("Mangga", 4);
+        myDict.put("Semangka", 5);
+        myDict.put("Jeruk", 6);
+
+        myDict.remove("Semangka");
+
+        Enumeration<String> key3 = myDict.keys();
+        while (key3.hasMoreElements()) {
+            String key = key3.nextElement();
+            System.out.println("Key: " + key + ", Value: " + myDict.get(key));
+        }
+
+        System.out.println("\nSize of Dictionary: " + myDict.size());
     }
 }

@@ -11,10 +11,13 @@ public class ContohSet {
         abjad.add("B");
         abjad.add("C");
         abjad.add("D");
+        abjad.add("R");
+        abjad.add("R");
+        abjad.add("R");
 
         for (String value : abjad)
             System.out.println(value + ", ");
 
-        System.out.println();
+        System.out.println(abjad);
     }
 }
