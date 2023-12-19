@@ -7,10 +7,8 @@ public class InterruptedingThread extends Thread {
         try{
             Thread.sleep(1000 * 60 * 60 * 7);
             System.out.println("terimakasih sudah diingatkan");
-        
-        }catch(InterruptedException ie){
+        } catch(InterruptedException ie){
              System.out.println("hanya 5 menit saja...");
-        
         }
     }
 

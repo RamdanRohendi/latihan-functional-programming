@@ -10,4 +10,3 @@ public class Threads extends Thread {
         thread1.start();
     }
 }
-
