@@ -28,6 +28,7 @@ public class Counter {
         return countValue;
     }
 }
+
 class hitungThread implements Runnable {
     Counter myCounter;
     int countAmount;

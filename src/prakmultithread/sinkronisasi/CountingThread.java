@@ -4,7 +4,6 @@ public class CountingThread {
     public static void main(String[] args) throws Exception {
         Counter c = new Counter ();
 
-        //instace Runnable akan menghitung 10x utk msg2 thread
         Runnable runner = new hitungThread (c,10);
         System.out.println ("Mulai perhitungan threads");
         Thread t1 = new Thread (runner);
@@ -15,7 +14,6 @@ public class CountingThread {
         t2.start();
         t3.start();
 
-        //menunggu 3 thread selesai menjalankannya
         t1.join();
         t2.join();
         t3.join();
